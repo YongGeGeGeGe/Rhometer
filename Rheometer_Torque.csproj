@@ -1,0 +1,392 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{725FD5EB-E61A-4531-8493-05EF5FF50633}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rheometer_Torque</RootNamespace>
+    <AssemblyName>Rheometer_Torque</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v22.2" />
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2" />
+    <Reference Include="DevExpress.Data.v22.2" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2.UI, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataVisualization.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Extensions, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.UI, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2" />
+    <Reference Include="DevExpress.Drawing.v22.2" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IBucket.cs" />
+    <Compile Include="Interface\IMachine.cs" />
+    <Compile Include="Interface\IMotor.cs" />
+    <Compile Include="Interface\INose.cs" />
+    <Compile Include="Interface\ISensor.cs" />
+    <Compile Include="Machine\AssistControlBoard.cs" />
+    <Compile Include="Machine\BackWaterSensor.cs" />
+    <Compile Include="Machine\Bucket.cs" />
+    <Compile Include="Machine\ControlBoard.cs" />
+    <Compile Include="Machine\FeedingMotor.cs" />
+    <Compile Include="Machine\Machine.cs" />
+    <Compile Include="Machine\MainControlBoard.cs" />
+    <Compile Include="Machine\MainMotor.cs" />
+    <Compile Include="Machine\Motor.cs" />
+    <Compile Include="Machine\Nose.cs" />
+    <Compile Include="Machine\PressureSensor.cs" />
+    <Compile Include="Machine\Scale.cs" />
+    <Compile Include="Machine\Sensor.cs" />
+    <Compile Include="Machine\SlicingSolenoidValve.cs" />
+    <Compile Include="Machine\SwitchingSolenoidValve.cs" />
+    <Compile Include="Machine\TemperatureSensor.cs" />
+    <Compile Include="Machine\TorqueSensor.cs" />
+    <Compile Include="Model\DocumentFormEventArgs.cs" />
+    <Compile Include="Model\Experiment.cs" />
+    <Compile Include="Model\ExperimentStage.cs" />
+    <Compile Include="Model\MachineParameter.cs" />
+    <Compile Include="Model\RealTimeData.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dashboard2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dashboard2.Designer.cs">
+      <DependentUpon>Dashboard2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dashboard3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dashboard3.Designer.cs">
+      <DependentUpon>Dashboard3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dashboard4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dashboard4.Designer.cs">
+      <DependentUpon>Dashboard4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExperimentParameters\FrmExperimentSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExperimentParameters\FrmExperimentSelect.Designer.cs">
+      <DependentUpon>FrmExperimentSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExperimentParameters\FrmExpreimentParametSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExperimentParameters\FrmExpreimentParametSetting.Designer.cs">
+      <DependentUpon>FrmExpreimentParametSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExperimentParameters\FrmPhaseParameterAppend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExperimentParameters\FrmPhaseParameterAppend.Designer.cs">
+      <DependentUpon>FrmPhaseParameterAppend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExperimentParameters\FrmPhaseParameterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExperimentParameters\FrmPhaseParameterSetting.Designer.cs">
+      <DependentUpon>FrmPhaseParameterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmMachineAnimationControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmMachineAnimationControl.Designer.cs">
+      <DependentUpon>FrmMachineAnimationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmWelcome.Designer.cs">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmChartSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmChartSet.Designer.cs">
+      <DependentUpon>FrmChartSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmDataProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmDataProcess.Designer.cs">
+      <DependentUpon>FrmDataProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmExperimentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmExperimentList.Designer.cs">
+      <DependentUpon>FrmExperimentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmRealTimeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmRealTimeData.Designer.cs">
+      <DependentUpon>FrmRealTimeData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmParameterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessWindow\FrmParameterInfo.Designer.cs">
+      <DependentUpon>FrmParameterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemSet\FrmSystemSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SystemSet\FrmSystemSetting.Designer.cs">
+      <DependentUpon>FrmSystemSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Dashboard2.resx">
+      <DependentUpon>Dashboard2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Dashboard3.resx">
+      <DependentUpon>Dashboard3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Dashboard4.resx">
+      <DependentUpon>Dashboard4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExperimentParameters\FrmExperimentSelect.resx">
+      <DependentUpon>FrmExperimentSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExperimentParameters\FrmExpreimentParametSetting.resx">
+      <DependentUpon>FrmExpreimentParametSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExperimentParameters\FrmPhaseParameterAppend.resx">
+      <DependentUpon>FrmPhaseParameterAppend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExperimentParameters\FrmPhaseParameterSetting.resx">
+      <DependentUpon>FrmPhaseParameterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmMachineAnimationControl.resx">
+      <DependentUpon>FrmMachineAnimationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmWelcome.resx">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessWindow\FrmChartSet.resx">
+      <DependentUpon>FrmChartSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessWindow\FrmDataProcess.resx">
+      <DependentUpon>FrmDataProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessWindow\FrmExperimentList.resx">
+      <DependentUpon>FrmExperimentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessWindow\FrmRealTimeData.resx">
+      <DependentUpon>FrmRealTimeData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessWindow\FrmParameterInfo.resx">
+      <DependentUpon>FrmParameterInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SystemSet\FrmSystemSetting.resx">
+      <DependentUpon>FrmSystemSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="bin\Debug\Rheometer.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Images\App.ico" />
+    <Content Include="Images\connect.png" />
+    <Content Include="Images\CoolOff.jpg" />
+    <Content Include="Images\Welcome.jpg" />
+    <Content Include="Rheometer.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{669f0d01-f3f7-4a1c-88f8-609946a16cbf}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\App.ico" />
+    <Content Include="Images\connect.png" />
+    <Content Include="Images\CoolOff.jpg" />
+    <Content Include="Images\Welcome.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
